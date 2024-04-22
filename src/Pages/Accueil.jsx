@@ -20,21 +20,26 @@ export default function Accueil() {
               </h2>
 
               <p className="mt-4 leading-relaxed text-white/90">
-                Pour des elections inclusives et transparentes, une organisation sans faille est necessaire afin de respecter la souveraiente du peuple Senegalais.
+                Pour des elections inclusives et transparentes, une organisation
+                sans faille est necessaire afin de respecter la souveraiente du
+                peuple Senegalais.
               </p>
             </div>
           </section>
 
-          <main
-            className="flex items-center justify-center px-8 py-8 sm:px-12 lg:col-span-7 lg:px-16 lg:py-12 xl:col-span-6"
-          >
+          <main className="flex items-center justify-center px-8 py-8 sm:px-12 lg:col-span-7 lg:px-16 lg:py-12 xl:col-span-6">
             <div className="max-w-xl lg:max-w-3xl">
-        
               <StepOne />
 
               <form action="#" className="mt-8 grid grid-cols-6 gap-6">
                 <div className="col-span-6">
-                  <label htmlFor="text" className="block text-sm font-medium text-gray-700"> Matricule </label>
+                  <label
+                    htmlFor="text"
+                    className="block text-sm font-medium text-gray-700"
+                  >
+                    {" "}
+                    Matricule{" "}
+                  </label>
 
                   <input
                     type="text"
@@ -46,13 +51,10 @@ export default function Accueil() {
 
                 <div className="col-span-6 sm:flex sm:items-center sm:gap-4">
                   <button
-                    href="/connexion"
                     className="inline-block shrink-0 rounded-md border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-blue-600 focus:outline-none focus:ring active:text-blue-500"
                   >
-                    Continuer
+                    <Link to="/connexion">Continuer</Link>
                   </button>
-
-            
                 </div>
               </form>
               <p className="text-[#eb35afe] text-sm mt-7">
@@ -62,5 +64,6 @@ export default function Accueil() {
           </main>
         </div>
       </section>
-    </>)
+    </>
+  );
 }
