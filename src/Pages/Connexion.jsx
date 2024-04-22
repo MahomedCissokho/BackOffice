@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import vote from "../assets/vote.jpg"
 import StepTwo from "../components/StepTwo"
 
@@ -19,21 +20,23 @@ export default function Connexion() {
               </h2>
 
               <p className="mt-4 leading-relaxed text-white/90">
-                Pour des elections inclusives et transparentes, une organisation sans faille est necessaire afin de respecter la souveraiente du peuple Senegalais.
+                Pour des elections inclusives et transparentes, une organisation
+                sans faille est necessaire afin de respecter la souveraiente du
+                peuple Senegalais.
               </p>
             </div>
           </section>
 
-          <main
-            className="flex items-center justify-center px-8 py-8 sm:px-12 lg:col-span-7 lg:px-16 lg:py-12 xl:col-span-6"
-          >
+          <main className="flex items-center justify-center px-8 py-8 sm:px-12 lg:col-span-7 lg:px-16 lg:py-12 xl:col-span-6">
             <div className="max-w-xl lg:max-w-3xl">
-        
               <StepTwo />
 
               <form action="#" className="mt-8 grid grid-cols-6 gap-6">
                 <div className="col-span-6 sm:col-span-3">
-                  <label htmlFor="FirstName" className="block text-sm font-medium text-gray-700">
+                  <label
+                    htmlFor="FirstName"
+                    className="block text-sm font-medium text-gray-700"
+                  >
                     Prenom
                   </label>
 
@@ -46,7 +49,10 @@ export default function Connexion() {
                 </div>
 
                 <div className="col-span-6 sm:col-span-3">
-                  <label htmlFor="LastName" className="block text-sm font-medium text-gray-700">
+                  <label
+                    htmlFor="LastName"
+                    className="block text-sm font-medium text-gray-700"
+                  >
                     Nom
                   </label>
 
@@ -59,7 +65,13 @@ export default function Connexion() {
                 </div>
 
                 <div className="col-span-6">
-                  <label htmlFor="Email" className="block text-sm font-medium text-gray-700"> Email </label>
+                  <label
+                    htmlFor="Email"
+                    className="block text-sm font-medium text-gray-700"
+                  >
+                    {" "}
+                    Email{" "}
+                  </label>
 
                   <input
                     type="email"
@@ -70,7 +82,13 @@ export default function Connexion() {
                 </div>
 
                 <div className="col-span-6 sm:col-span-3">
-                  <label htmlFor="Password" className="block text-sm font-medium text-gray-700"> Mot de Passe </label>
+                  <label
+                    htmlFor="Password"
+                    className="block text-sm font-medium text-gray-700"
+                  >
+                    {" "}
+                    Mot de Passe{" "}
+                  </label>
 
                   <input
                     type="password"
@@ -80,10 +98,8 @@ export default function Connexion() {
                   />
                 </div>
                 <div className="col-span-6 sm:flex sm:items-center sm:gap-4">
-                  <button
-                    className="inline-block shrink-0 rounded-md border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-blue-600 focus:outline-none focus:ring active:text-blue-500"
-                  >
-                    Se Connecter
+                  <button className="inline-block shrink-0 rounded-md border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-blue-600 focus:outline-none focus:ring active:text-blue-500">
+                    <Link to='/accueil'>Se Connecter</Link>
                   </button>
                 </div>
               </form>
@@ -91,5 +107,6 @@ export default function Connexion() {
           </main>
         </div>
       </section>
-    </>)
+    </>
+  );
 }

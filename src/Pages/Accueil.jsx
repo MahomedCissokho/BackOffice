@@ -56,7 +56,7 @@ export default function Accueil() {
                 </div>
               </form>
               <p className="text-[#eb35afe] text-sm mt-7">
-                Avez-vous deja un compte ? <Link to="/auth">Se Connecte</Link>
+                Avez-vous deja un compte ? <Link to="/auth">Se Connecter </Link>
               </p>
             </div>
           </main>
