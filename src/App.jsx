@@ -7,6 +7,7 @@ import Monitoring from "./Pages/Monitoring"
 import Authentification from "./Pages/Authentification"
 import NouveauCandidat from "./Pages/NouveauCandidat"
 import FormCandidat1 from "./Pages/FormCandidat1"
+import InfosSup2 from "./Pages/InfosSup2"
 
 export default function App() {
   return (
@@ -22,6 +23,7 @@ export default function App() {
           <Route path="/monitoring" element={<Monitoring />} />
           <Route path="/auth" element={<Authentification />} />
           <Route path="/candidat/infos-sup" element={<FormCandidat1 />} />
+          <Route path="/candidat/infos-sup2" element={<InfosSup2 />} />
         </Routes>
       </BrowserRouter>
     </>
