@@ -31,7 +31,7 @@ export default function Authenification() {
             <div className="max-w-xl lg:max-w-3xl">
               <StepThree />
 
-              <form action="#" className="mt-8 grid grid-cols-6 gap-6">
+              <form action="Home.jsx" className="mt-8 grid grid-cols-6 gap-6">
                 <div className="col-span-6">
                   <label
                     htmlFor="Email"

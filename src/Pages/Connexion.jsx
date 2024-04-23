@@ -31,7 +31,7 @@ export default function Connexion() {
             <div className="max-w-xl lg:max-w-3xl">
               <StepTwo />
 
-              <form action="#" className="mt-8 grid grid-cols-6 gap-6">
+              <form action="/accueil" className="mt-8 grid grid-cols-6 gap-6">
                 <div className="col-span-6 sm:col-span-3">
                   <label
                     htmlFor="FirstName"

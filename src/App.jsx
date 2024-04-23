@@ -6,6 +6,7 @@ import Candidat from "./Pages/Candidat"
 import Monitoring from "./Pages/Monitoring"
 import Authentification from "./Pages/Authentification"
 import NouveauCandidat from "./Pages/NouveauCandidat"
+import FormCandidat1 from "./Pages/FormCandidat1"
 
 export default function App() {
   return (
@@ -17,9 +18,10 @@ export default function App() {
           <Route path="/accueil" element={<Home />} />
           <Route path="/candidat" element={<Candidat />} />
           <Route path="/candidat/nouveau" element={<NouveauCandidat />} />
-          
+
           <Route path="/monitoring" element={<Monitoring />} />
           <Route path="/auth" element={<Authentification />} />
+          <Route path="/candidat/infos-sup" element={<FormCandidat1 />} />
         </Routes>
       </BrowserRouter>
     </>
